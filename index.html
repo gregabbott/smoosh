@@ -1,0 +1,70 @@
+<!-- By + Copyright Greg Abbott 2024-2025. V 2025_0227 -->
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<link rel=icon href="data:;base64,iVBORw0KGgo=">
+<link rel=stylesheet href=c.css>
+<title>Smoosh</title></head>
+<body>
+<header>Combine an image and a zip into a single polyglot file</header>
+<main>
+<div id=column>
+  <div id=pieces>
+  <div id=image_drop_zone>
+    <div id=default_image_area>
+    <button id=trigger_image_input_picker>Choose an image</button>
+    Or use the default one:<br>
+    <input
+    hidden
+    type=file
+    id=image_picker 
+    accept="image/png, image/jpeg"
+    >
+    <img id=preview_default_img>
+  </div>
+  <div id=custom_image_area class=hide>
+    <button id=remove_chosen_image>Remove Image</button>
+  <img  id=preview_user_picked_img>
+  </div>
+  </div><!--end image_drop_zone-->
+  <div id=zip_drop_zone>
+  <div id=default_zip_area>
+  <button id=trigger_zip_picker>Choose a .zip</button>
+    <input hidden type=file id=zip_picker accept=".zip">
+    <div id=custom_message_holder>
+      Or zip this text:
+      <textarea id=custom_text_message>Hello</textarea>
+    </div>
+  </div>
+  <div id=custom_zip_area class=hide>
+    <button id=remove_chosen_zip>Remove Zip</button>
+    Chosen zip:<br>
+    <div id=chosen_zip_name></div>
+  </div>
+</div><!--end zip_drop_zone-->
+</div><!-- end pieces-->
+<field>
+  <label for=output_file_name>Name the combined file</label>
+  <input type=text id=output_file_name value=Polyglot required>
+</field>
+  <button id=save_button>Combine + Save</button>
+  <!--  "<span class=output_name_sync></span>" -->
+  <p>(Re)name the saved file to end:<br>
+    - ".<b id=current_img_ext>png</b>" to show the image file.<br>
+    - ".<b>zip</b>" to show the zip file.</p>
+    <p>"Archive Utility.app" on Mac fails to unzip the file produced.<br>Try other unarchiver applications.</p>
+</div><!--end column-->
+</main>
+<div id=hide_popover></div>
+<div popover id=popover_license>
+  <p>By and Copyright &copy; 2024-2025 <a href=https://gregabbott.pages.dev/>Greg Abbott</a>. All rights reserved.<br>
+  (Site, tool, documentation etc.)</p>
+  <p>NO WARRANTY<br>
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  </p>
+</div>
+<footer>
+  <button popovertarget=popover_license>License | By + &copy; </button> <a href=https://gregabbott.pages.dev/>Greg Abbott</a> 2025 | <a href=changelog.html>Log</a> | <a href=https://buymeacoffee.com/gregabbott>Buy Me A Coffee</a> | 
+  <a href=https://ko-fi.com/gregabbott>KoFi</a>
+</footer>
+<script src=zip.js></script>
+<script src=j.js></script>
+</body></html>
