@@ -2,9 +2,9 @@
 <!doctype html><html lang=en><head><meta charset=utf-8>
 <link rel=icon href="data:;base64,iVBORw0KGgo=">
 <link rel=stylesheet href=c.css>
-<title>Smoosh</title></head>
+<title>Smoosh &mdash; Combine an image and a zip into a single polyglot file</title></head>
 <body>
-<header>Combine an image and a zip into a single polyglot file</header>
+<header><b>Smoosh</b> Combine an image and a zip into a single polyglot file</header>
 <main>
 <div id=column>
   <div id=pieces>
@@ -43,11 +43,11 @@
 </div><!-- end pieces-->
 <field>
   <label for=output_file_name>Name the combined file</label>
-  <input type=text id=output_file_name value=Polyglot required>
+  <input type=text id=output_file_name value=Smooshed required>
 </field>
   <button id=save_button>Combine + Save</button>
   <!--  "<span class=output_name_sync></span>" -->
-  <p>The polyglot file hides or shows the zip or the image based on whether its name has the extension ".<b id=current_img_ext>png</b>" or "<b>.zip</b>".</p>
+  <p>The produced file hides or shows either the zip or the image based on whether its name ends with the extension ".<b id=current_img_ext>png</b>" or "<b>.zip</b>".</p>
     <p>"Archive Utility.app" on Mac fails to unzip the file produced.<br>Try other unarchiver applications.</p>
 </div><!--end column-->
 </main>
