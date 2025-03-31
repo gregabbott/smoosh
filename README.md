@@ -1,8 +1,8 @@
-# Smoosh
-- A simple tool to combine a .zip and an image file into a polyglot file.
+# Stog
+- A simple tool to combine a .zip and an image file into a polyglot file, or split a polyglot file into a .zip and image file.
 - The polyglot hides or shows the zip or the image based on the current file name extension.
 - Vanilla JS &lt;30KB
-- Use Smoosh at [the main site](https://smoosh.pages.dev) (or [GitHub Pages](https://gregabbott.github.io/smoosh/)).
+- Use at [the main site](https://stog.pages.dev) (or [GitHub Pages](https://gregabbott.github.io/stog/)).
 - Support via:
   - [Buy me a coffee](https://buymeacoffee.com/gregabbott)
   - [Kofi](https://ko-fi.com/gregabbott)
